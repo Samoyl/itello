@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="main" size="1532,1652" id="se.itello.example.payments.main" metadata="uml2-1.0" initialized="true" scrolledY="88" tag="10" key="32303037303533312D3130204974656C6C6F">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0 //@children.1/@sourceConnections.3 //@children.9/@sourceConnections.5" name="CloseingPost" location="540,104" size="183,89" id="se.itello.example.payments.model/CloseingPost">
+    <children xsi:type="editmodel:CompartmentEditModel" size="97,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="quantity" id="se.itello.example.payments.model/CloseingPost#quantity"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sum" id="se.itello.example.payments.model/CloseingPost#sum"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.8/@sourceConnections.3 //@children.2/@sourceConnections.0 //@children.4/@sourceConnections.0 //@children.10/@sourceConnections.0 //@children.9/@sourceConnections.4 //@children.3/@sourceConnections.4" name="Bundle" location="270,495" size="130,85" id="se.itello.example.payments.main/Bundle">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="107,36">
+      <children xsi:type="editmodel:MethodEditModel" name="getPaymentPost" id="se.itello.example.payments.main/Bundle#getPaymentPost()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPaymentPost" id="se.itello.example.payments.main/Bundle#setPaymentPost(Ljava.util.List;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="se.itello.example.payments.model/CloseingPost@closeingPost+se.itello.example.payments.main/Bundle@" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="120,0" id="se.itello.example.payments.model/CloseingPost@closeingPost+se.itello.example.payments.main/Bundle@|se.itello.example.payments.main/Bundle#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="closeingPost" location="0,79" id="se.itello.example.payments.model/CloseingPost@closeingPost+se.itello.example.payments.main/Bundle@|se.itello.example.payments.model/CloseingPost#closeingPost" multiplicityLabel="//@children.1/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - closeingPost" location="462,162" size="71,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="515,190" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/Bundle-Soyatec::Import->se.itello.example.payments.model/PaymentPost" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="79,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="49,117"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/Bundle-Soyatec::Import->se.itello.example.payments.model/OpeningPost" source="//@children.1" target="//@children.4" targetEnd="//@children.1/@sourceConnections.2/@children.2" label="//@children.1/@sourceConnections.2/@children.0" sourceEnd="//@children.1/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="122,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,138"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/Bundle-Soyatec::Import->se.itello.example.payments.model/CloseingPost" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.3/@children.2" label="//@children.1/@sourceConnections.3/@children.0" sourceEnd="//@children.1/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="130,15" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="15,89"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.8/@sourceConnections.1 //@children.1/@sourceConnections.1 //@children.9/@sourceConnections.3 //@children.3/@sourceConnections.3" name="PaymentPost" location="300,50" size="183,117" id="se.itello.example.payments.model/PaymentPost">
+    <children xsi:type="editmodel:CompartmentEditModel" size="138,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="amount" id="se.itello.example.payments.model/PaymentPost#amount"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="referenceNumber" id="se.itello.example.payments.model/PaymentPost#referenceNumber"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="90,18">
+      <children xsi:type="editmodel:MethodEditModel" name="getReferens" id="se.itello.example.payments.model/PaymentPost#getReferens()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="se.itello.example.payments.model/PaymentPost@paymentPost+se.itello.example.payments.main/Bundle@" source="//@children.2" target="//@children.1" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="paymentPost" location="0,112" id="se.itello.example.payments.model/PaymentPost@paymentPost+se.itello.example.payments.main/Bundle@|se.itello.example.payments.model/PaymentPost#paymentPost" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - paymentPost" location="221,141" size="72,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="289,169" size="4,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="59,0" id="se.itello.example.payments.model/PaymentPost@paymentPost+se.itello.example.payments.main/Bundle@|se.itello.example.payments.main/Bundle#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PaymentMain" location="773,946" size="129,67" id="se.itello.example.payments.main/PaymentMain">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="52,18">
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="se.itello.example.payments.main/PaymentMain#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/PaymentMain->se.itello.example.payments.impl/PaymentReceiverImpl" source="//@children.3" target="//@children.6" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,33" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="182,79"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/PaymentMain->se.itello.example.payments.main/BePaymentDataProcessor" source="//@children.3" target="//@children.8" targetEnd="//@children.3/@sourceConnections.1/@children.2" label="//@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="8,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="160,67"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/PaymentMain->se.itello.example.payments.model/OpeningPost" source="//@children.3" target="//@children.4" targetEnd="//@children.3/@sourceConnections.2/@children.2" label="//@children.3/@sourceConnections.2/@children.0" sourceEnd="//@children.3/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="83,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="45,143"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/PaymentMain->se.itello.example.payments.model/PaymentPost*se.itello.example.payments.main/PaymentMain-Soyatec::Import->se.itello.example.payments.model/PaymentPost" source="//@children.3" target="//@children.2" targetEnd="//@children.3/@sourceConnections.3/@children.2" label="//@children.3/@sourceConnections.3/@children.0" sourceEnd="//@children.3/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="47,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="121,117"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/PaymentMain->se.itello.example.payments.main/Bundle*se.itello.example.payments.main/PaymentMain-Soyatec::Import->se.itello.example.payments.main/Bundle" source="//@children.3" target="//@children.1" targetEnd="//@children.3/@sourceConnections.4/@children.2" label="//@children.3/@sourceConnections.4/@children.0" sourceEnd="//@children.3/@sourceConnections.4/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="27,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="114,85"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/PaymentMain->se.itello.example.payments.main/InPaymentDataProcessor" source="//@children.3" target="//@children.9" targetEnd="//@children.3/@sourceConnections.5/@children.2" label="//@children.3/@sourceConnections.5/@children.0" sourceEnd="//@children.3/@sourceConnections.5/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="83,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="91,29"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/PaymentMain->se.itello.example.payments/PaymentReceiver*se.itello.example.payments.main/PaymentMain-Soyatec::Import->se.itello.example.payments/PaymentReceiver" source="//@children.3" target="//@children.7" targetEnd="//@children.3/@sourceConnections.6/@children.2" label="//@children.3/@sourceConnections.6/@children.0" sourceEnd="//@children.3/@sourceConnections.6/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,55" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="154,38"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/PaymentMain->se.itello.example.payments.main/PaymentDataProcessor*se.itello.example.payments.main/PaymentMain-Soyatec::Import->se.itello.example.payments.main/PaymentDataProcessor" source="//@children.3" target="//@children.10" targetEnd="//@children.3/@sourceConnections.7/@children.2" label="//@children.3/@sourceConnections.7/@children.0" sourceEnd="//@children.3/@sourceConnections.7/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="83,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="45,29"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.8/@sourceConnections.2 //@children.1/@sourceConnections.2 //@children.9/@sourceConnections.2 //@children.3/@sourceConnections.2" name="OpeningPost" location="811,50" size="183,143" id="se.itello.example.payments.model/OpeningPost">
+    <children xsi:type="editmodel:CompartmentEditModel" size="129,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="accountNumber" id="se.itello.example.payments.model/OpeningPost#accountNumber"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="amount" id="se.itello.example.payments.model/OpeningPost#amount"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="currency" id="se.itello.example.payments.model/OpeningPost#currency"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="date" id="se.itello.example.payments.model/OpeningPost#date"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="quantity" id="se.itello.example.payments.model/OpeningPost#quantity"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="se.itello.example.payments.model/OpeningPost@opningPost+se.itello.example.payments.main/Bundle@" source="//@children.4" target="//@children.1" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="opningPost" location="5,143" id="se.itello.example.payments.model/OpeningPost@opningPost+se.itello.example.payments.main/Bundle@|se.itello.example.payments.model/OpeningPost#opningPost" attachSource="true" multiplicityLabel="//@children.4/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.4/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - opningPost" location="823,200" size="63,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="791,200" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="130,15" id="se.itello.example.payments.model/OpeningPost@opningPost+se.itello.example.payments.main/Bundle@|se.itello.example.payments.main/Bundle#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:EnumerationEditModel" targetConnections="//@children.8/@sourceConnections.4 //@children.9/@sourceConnections.1" name="PostType" location="1019,856" size="187,157" id="se.itello.example.payments.enums/PostType">
+    <children xsi:type="editmodel:CompartmentEditModel" size="41,90">
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="end" id="se.itello.example.payments.enums/PostType#end%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="pay" id="se.itello.example.payments.enums/PostType#pay%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="start" id="se.itello.example.payments.enums/PostType#start%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="O" id="se.itello.example.payments.enums/PostType#O%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="B" id="se.itello.example.payments.enums/PostType#B%"/>
+    </children>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0" name="PaymentReceiverImpl" location="301,900" size="182,117" id="se.itello.example.payments.impl/PaymentReceiverImpl">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,54">
+      <children xsi:type="editmodel:MethodEditModel" name="endPaymentBundle" id="se.itello.example.payments.impl/PaymentReceiverImpl#endPaymentBundle()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="payment" id="se.itello.example.payments.impl/PaymentReceiverImpl#payment(Ljava.math.BigDecimal;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="startPaymentBundle" id="se.itello.example.payments.impl/PaymentReceiverImpl#startPaymentBundle(Ljava.lang.String;Ljava.util.Date;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="se.itello.example.payments/PaymentReceiver&lt;-se.itello.example.payments.impl/PaymentReceiverImpl" source="//@children.6" target="//@children.7" targetEnd="//@children.6/@sourceConnections.0/@children.1" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="104,117" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="76,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.impl/PaymentReceiverImpl-Soyatec::Implement->se.itello.example.payments/PaymentReceiver" source="//@children.6" target="//@children.7" targetEnd="//@children.6/@sourceConnections.1/@children.2" label="//@children.6/@sourceConnections.1/@children.0" sourceEnd="//@children.6/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Implement»" size="59,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="124,117" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="154,15"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.3/@sourceConnections.6 //@children.6/@sourceConnections.0 //@children.6/@sourceConnections.1" name="PaymentReceiver" location="329,1065" size="154,131" id="se.itello.example.payments/PaymentReceiver">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,54">
+      <children xsi:type="editmodel:MethodEditModel" name="endPaymentBundle" id="se.itello.example.payments/PaymentReceiver#endPaymentBundle()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="payment" id="se.itello.example.payments/PaymentReceiver#payment(Ljava.math.BigDecimal;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="startPaymentBundle" id="se.itello.example.payments/PaymentReceiver#startPaymentBundle(Ljava.lang.String;Ljava.util.Date;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.1" name="BePaymentDataProcessor" location="277,675" size="206,67" id="se.itello.example.payments.main/BePaymentDataProcessor">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="93,18">
+      <children xsi:type="editmodel:MethodEditModel" name="getLocalDate" id="se.itello.example.payments.main/BePaymentDataProcessor#getLocalDate(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.9/@sourceConnections.0" autoLocated="true" id="se.itello.example.payments.main/PaymentDataProcessor&lt;-se.itello.example.payments.main/BePaymentDataProcessor" source="//@children.8" target="//@children.10" targetEnd="//@children.8/@sourceConnections.0/@children.1" sourceEnd="//@children.8/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="155,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="30,29" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/BePaymentDataProcessor->se.itello.example.payments.model/PaymentPost*se.itello.example.payments.main/BePaymentDataProcessor->se.itello.example.payments.model/PaymentPost*se.itello.example.payments.main/BePaymentDataProcessor-Soyatec::Import->se.itello.example.payments.model/PaymentPost" source="//@children.8" target="//@children.2" targetEnd="//@children.8/@sourceConnections.1/@children.2" label="//@children.8/@sourceConnections.1/@children.0" sourceEnd="//@children.8/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="114,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="91,117"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/BePaymentDataProcessor->se.itello.example.payments.model/OpeningPost*se.itello.example.payments.main/BePaymentDataProcessor->se.itello.example.payments.model/OpeningPost*se.itello.example.payments.main/BePaymentDataProcessor-Soyatec::Import->se.itello.example.payments.model/OpeningPost" source="//@children.8" target="//@children.4" targetEnd="//@children.8/@sourceConnections.2/@children.2" label="//@children.8/@sourceConnections.2/@children.0" sourceEnd="//@children.8/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="132,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="27,143"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/BePaymentDataProcessor->se.itello.example.payments.main/Bundle*se.itello.example.payments.main/BePaymentDataProcessor->se.itello.example.payments.main/Bundle*se.itello.example.payments.main/BePaymentDataProcessor-Soyatec::Import->se.itello.example.payments.main/Bundle" source="//@children.8" target="//@children.1" targetEnd="//@children.8/@sourceConnections.3/@children.2" label="//@children.8/@sourceConnections.3/@children.0" sourceEnd="//@children.8/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="61,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="68,85"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/BePaymentDataProcessor->se.itello.example.payments.enums/PostType*se.itello.example.payments.main/BePaymentDataProcessor-Soyatec::Access->se.itello.example.payments.enums/PostType" source="//@children.8" target="//@children.5" targetEnd="//@children.8/@sourceConnections.4/@children.2" label="//@children.8/@sourceConnections.4/@children.0" sourceEnd="//@children.8/@sourceConnections.4/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Access»" size="50,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="206,65" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,49"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/BePaymentDataProcessor->se.itello.example.payments.main/PaymentDataProcessor" source="//@children.8" target="//@children.10" targetEnd="//@children.8/@sourceConnections.5/@children.2" label="//@children.8/@sourceConnections.5/@children.0" sourceEnd="//@children.8/@sourceConnections.5/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="206,15" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="9,29"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.5" name="InPaymentDataProcessor" location="1005,510" size="201,29" id="se.itello.example.payments.main/InPaymentDataProcessor">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="se.itello.example.payments.main/PaymentDataProcessor&lt;-se.itello.example.payments.main/InPaymentDataProcessor" source="//@children.9" target="//@children.8/@sourceConnections.0" targetEnd="//@children.9/@sourceConnections.0/@children.1" sourceEnd="//@children.9/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="100,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/InPaymentDataProcessor->se.itello.example.payments.enums/PostType*se.itello.example.payments.main/InPaymentDataProcessor-Soyatec::Access->se.itello.example.payments.enums/PostType" source="//@children.9" target="//@children.5" targetEnd="//@children.9/@sourceConnections.1/@children.2" label="//@children.9/@sourceConnections.1/@children.0" sourceEnd="//@children.9/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Access»" size="50,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="107,29" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="93,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/InPaymentDataProcessor->se.itello.example.payments.model/OpeningPost*se.itello.example.payments.main/InPaymentDataProcessor->se.itello.example.payments.model/OpeningPost*se.itello.example.payments.main/InPaymentDataProcessor-Soyatec::Import->se.itello.example.payments.model/OpeningPost" source="//@children.9" target="//@children.4" targetEnd="//@children.9/@sourceConnections.2/@children.2" label="//@children.9/@sourceConnections.2/@children.0" sourceEnd="//@children.9/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="93,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="127,143"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/InPaymentDataProcessor->se.itello.example.payments.model/PaymentPost*se.itello.example.payments.main/InPaymentDataProcessor->se.itello.example.payments.model/PaymentPost*se.itello.example.payments.main/InPaymentDataProcessor-Soyatec::Import->se.itello.example.payments.model/PaymentPost" source="//@children.9" target="//@children.2" targetEnd="//@children.9/@sourceConnections.3/@children.2" label="//@children.9/@sourceConnections.3/@children.0" sourceEnd="//@children.9/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="76,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="183,112"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/InPaymentDataProcessor->se.itello.example.payments.main/Bundle*se.itello.example.payments.main/InPaymentDataProcessor->se.itello.example.payments.main/Bundle*se.itello.example.payments.main/InPaymentDataProcessor-Soyatec::Import->se.itello.example.payments.main/Bundle" source="//@children.9" target="//@children.1" targetEnd="//@children.9/@sourceConnections.4/@children.2" label="//@children.9/@sourceConnections.4/@children.0" sourceEnd="//@children.9/@sourceConnections.4/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,14" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="130,29"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/InPaymentDataProcessor->se.itello.example.payments.model/CloseingPost*se.itello.example.payments.main/InPaymentDataProcessor->se.itello.example.payments.model/CloseingPost*se.itello.example.payments.main/InPaymentDataProcessor-Soyatec::Import->se.itello.example.payments.model/CloseingPost" source="//@children.9" target="//@children.0" targetEnd="//@children.9/@sourceConnections.5/@children.2" label="//@children.9/@sourceConnections.5/@children.0" sourceEnd="//@children.9/@sourceConnections.5/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="82,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="148,89"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/InPaymentDataProcessor->se.itello.example.payments.main/PaymentDataProcessor" source="//@children.9" target="//@children.10" targetEnd="//@children.9/@sourceConnections.6/@children.2" label="//@children.9/@sourceConnections.6/@children.0" sourceEnd="//@children.9/@sourceConnections.6/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="67,29" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="125,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.8/@sourceConnections.0 //@children.8/@sourceConnections.5 //@children.9/@sourceConnections.6 //@children.3/@sourceConnections.7" name="PaymentDataProcessor" location="811,601" size="189,29" id="se.itello.example.payments.main/PaymentDataProcessor">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="se.itello.example.payments.main/PaymentDataProcessor-Soyatec::Import->se.itello.example.payments.main/Bundle" source="//@children.10" target="//@children.1" targetEnd="//@children.10/@sourceConnections.0/@children.2" label="//@children.10/@sourceConnections.0/@children.0" sourceEnd="//@children.10/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,1" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="130,51"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" properties="wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
